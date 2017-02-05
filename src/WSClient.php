@@ -75,7 +75,7 @@ class WSClient
     public function __construct($url)
     {
         if (!preg_match('/^https?:\/\//i', $url)) {
-            $url = sprintf('http://%s', $url);
+            $url = sprintf('https://%s', $url);
         }
         if (strripos($url, '/') != (strlen($url)-1)) {
             $url .= '/';
