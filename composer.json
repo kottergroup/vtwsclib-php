@@ -1,7 +1,7 @@
 {
     "name":         "kottergroup/vtwsclib-php",
     "license":      "MIT",
-    "description":  "Vtiger Web Services PHP Client Library - from salaros/vtwsclib-php",
+    "description":  "Vtiger Web Services PHP Client Library - originally from salaros/vtwsclib-php",
     "homepage":     "https://github.com/kottergroup/vtwsclib-php",
     "type":         "library",
     "keywords": [
@@ -13,9 +13,9 @@
 
     "authors": [
         {
-            "name": "Zhmayev Yaroslav",
-            "email": "salaros@salaros.com",
-            "homepage": "http://salaros.com",
+            "name": "Keith Gallant",
+            "email": "keith@keithgallant.com",
+            "homepage": "http://kotter.net",
             "role": "Developer"
         }
     ],
