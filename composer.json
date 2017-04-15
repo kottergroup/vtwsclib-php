@@ -13,11 +13,16 @@
 
     "authors": [
         {
+            "name": "Zhmayev Yaroslav",
+             "email": "salaros@salaros.com",
+             "homepage": "http://salaros.com",
+             "role": "Developer"
+         },{
             "name": "Keith Gallant",
             "email": "keith@keithgallant.com",
             "homepage": "http://kotter.net",
-            "role": "Developer"
-        }
+             "role": "Contributor"
+         }
     ],
     "require": {
         "php": ">=5.5",
