@@ -365,7 +365,7 @@ class WSClient
         ];
 
         if (!empty($params) && is_array($params)) {
-            $requestData = array_merge($params);
+            $requestData = array_merge($requestData, $params);
         }
 
         return $this->sendHttpRequest($requestData, $method);
