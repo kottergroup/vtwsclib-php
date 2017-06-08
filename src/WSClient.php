@@ -33,6 +33,7 @@ namespace Kottergroup\Vtiger\VTWSCLib;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
+use Log;
 
 /**
  * Vtiger Web Services PHP Client
@@ -80,7 +81,7 @@ class WSClient
         if (strripos($url, '/') != (strlen($url)-1)) {
             $url .= '/';
         }
-
+        Log::info($url);
         // Gets target URL for WebServices API requests
         $this->httpClient = new Client([
             'base_uri' => $url
@@ -142,6 +143,7 @@ class WSClient
                     return null;
             }
         } catch (RequestException $ex) {
+            Log::info($ex->getMessage());
             $this->lastError = new WSClientError(
                 $ex->getMessage(),
                 $ex->getCode()
@@ -151,7 +153,7 @@ class WSClient
 
         $jsonRaw = $response->getBody();
         $jsonObj = json_decode($jsonRaw, true);
-
+        //Log::info($jsonObj);
         return (!is_array($jsonObj) || $this->checkForError($jsonObj))
             ? null
             : $jsonObj['result'];
