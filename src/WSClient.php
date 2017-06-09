@@ -29,7 +29,7 @@
  * @license   The MIT License (MIT)
  */
 
-namespace Kottergroup\Vtiger\VTWSCLib;
+namespace Salaros\Vtiger\VTWSCLib;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
@@ -39,7 +39,7 @@ use Log;
  * Vtiger Web Services PHP Client
  *
  * Class WSClient
- * @package Kottergroup\Vtiger\VTWSCLib
+ * @package Salaros\Vtiger\VTWSCLib
  */
 class WSClient
 {

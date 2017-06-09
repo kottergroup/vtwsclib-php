@@ -30,7 +30,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Kottergroup\\Vtiger\\VTWSCLib\\": "src/"
+            "Salaros\\Vtiger\\VTWSCLib\\": "src/"
         }
     }
 }

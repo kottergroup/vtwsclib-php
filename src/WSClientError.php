@@ -29,13 +29,13 @@
  * @license   The MIT License (MIT)
  */
 
-namespace Kottergroup\Vtiger\VTWSCLib;
+namespace Salaros\Vtiger\VTWSCLib;
 
 /**
  * Vtiger Web Services PHP Client error class
  *
  * Class WSClientError
- * @package Kottergroup\Vtiger\VTWSCLib
+ * @package Salaros\Vtiger\VTWSCLib
  */
 class WSClientError
 {
